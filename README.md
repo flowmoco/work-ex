@@ -19,6 +19,9 @@
 
 ### Install/update software
 
+**USING "SUDO" CAN BE DANGEROUS BE CAREFUL WHAT YOU TYPE!**
+
+
 * run `sudo apt-get update` to update to latest software.
 * reboot.
 
@@ -56,9 +59,9 @@ This is to turn your machine into a server to run PHP code
 * Files will be stored in /var/www/html/ – to make life easy give all users write access to this folder. `sudo chmod -R 777 /var/www/html`
 * Install PHP `sudo apt-get install php libapache2-mod-php -y`.
 
-### point apache to php folder
+### Point Apache to PHP folder
 
-Add the following to `/etc/apache2/sites-available/000-default.conf` after the existing VirtualHost tag you may need help to do this in nano text editor, note port number 88.
+Add the following to `/etc/apache2/sites-available/000-default.conf` after the existing VirtualHost tag, you may need help to do this in nano text editor, note port number 88.
 
 
 ```apache
